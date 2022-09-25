@@ -57,13 +57,6 @@ app.get('/clear', (req,res) => {
 
 })
 
-app.post('/register', (req,res) => {
-  console.log(req.body)
-  res.send(req.body)
-})
-app.get('/register', (req,res) => {
-  res.send("post req")
-})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
