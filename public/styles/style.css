@@ -1,0 +1,81 @@
+* {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    min-width: 100vh;
+    min-height: 100vh;
+}
+body {
+    background-color: #ffffff;
+    color: #000;
+    text-shadow: 2px 2px 2px #000000;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    min-width: 100vh;
+    min-height: 100vh;
+    background: url(https://getwallpapers.com/wallpaper/full/a/c/3/286106.jpg);
+    backdrop-filter: none;
+    height: 100vh;
+    width: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    background: rgba(255, 255, 255, 0.199);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px #000000;
+    backdrop-filter: blur(10px);
+    width: 700px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50vh;
+}
+.title {
+    font-size: 24px;
+}
+.desc {
+    padding: 5px;
+    margin-top: 150px;
+    width: 600px;
+    height: 200px;
+    margin-left: 600px;
+    background-color: rgba(0, 255, 255, 0.685);
+    box-shadow: 0px 0px 10px 10px rgb(0, 255, 255);
+    border-radius: 40px;
+    color: #ffffff;
+}
+
+code {
+    background-color: rgb(14, 14, 14);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 0, 148);
+    text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.815);
+    transition: all .6s;
+}
+
+a:hover {
+    color: rgb(0, 183, 255);
+    text-shadow: -2px 2px 1px rgba(3, 5, 102, 0.473);
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 550;
+}

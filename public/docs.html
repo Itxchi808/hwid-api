@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/docs.css">
+    <title>Basic Cheat Api Docs</title>
+</head>
+<body>
+    <div id="script" class="load-cont">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Write')">Write</button>
+        <button class="tablinks" onclick="opentab(event, 'Read')">Read</button>
+        <button class="tablinks" onclick="opentab(event, 'Clear')">Clear</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="Write" class="tabcontent">
+        <h3>Write</h3>
+        <h4>Javascript Example : </h4>
+        <p><br>
+        <div class=code>
+            const button = document.getElementById("button") <br>
+            button.addEventListener('click', () => { <br>
+                var data = document.getElementById("hwid") <br> 
+                fetch("http://localhost:3000/api?o=w&w="+hwid.text) <br>
+            })
+        </div>
+      </div>
+      
+      <div id="Read" class="tabcontent">
+        <h3>Read</h3>
+        <h4>Javascript Example : </h4>
+        <p><br>
+        <div class=code>
+            const button = document.getElementById("button") <br>
+            button.addEventListener('click', async () => { <br>
+                const list = await fetch("http://localhost:3000/api?o=r) <br>
+                console.log(list)
+            })
+        </div>
+      </div>
+      </div>
+      
+      <div id="Clear" class="tabcontent">
+        <h3>Clear</h3>
+        <h4>Javascript Example : </h4>
+        <p><br>
+        <div class=code>
+            const button = document.getElementById("button") <br>
+            button.addEventListener('click', () => { <br>
+                var data = document.getElementById("hwid") <br> 
+                fetch("http://localhost:3000/clear") <br>
+                console.log("HWIDLIST cleared.")
+            })
+        </div>
+      </div>
+      </div>
+      <script src="scripts/tabbar.js"></script>
+</body>
+</html>
